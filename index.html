@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles2.css">
+    <title>Quantum Creations - Your Creative Partner</title>
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Quantum Creations">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h1>Welcome to Quantum Creations</h1>
+        <p>Your Creative Partner in Business</p>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service">
+            <img src="service1.jpg" alt="Service 1">
+            <h3>Video Production</h3>
+            <p>Engage your audience with captivating videos tailored to your brand.</p>
+
+        </div>
+        <div class="service">
+            <img src="service2.jpg" alt="Service 2">
+            <h3>Web Design</h3>
+            <p>Create a stunning online presence with our creative web design solutions.</p>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>Welcome to Quantum Create, where innovation meets creativity. Established in 2023,
+            we're a passionate team of web design and video production experts dedicated to <br>
+            bringing your vision to life. With a client-centric approach, we craft visually
+            stunning websites and compelling video content tailored to elevate your brand.<br>
+            At Quantum Creations, we're not just creating projects; we're building extraordinary
+            digital experiences. Let's collaborate and turn your ideas into success. Contact Us<br>
+            to get started.</p>
+
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>Get in touch with us for collaboration and inquiries.</p>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="button" onclick="validateForm()">Submit</button>
+        </form>
+        <p>Visit us at: [Street: Navjivan Society, Bldg. # 3 Dr. Bhadkamkar Marg, Grant Road<br>
+            City: Mumbai<br>
+            State/province/area: Maharashtra<br>
+            Phone number: 02223081285<br>
+            Zip code: 400007<br>
+            Country calling code: +91<br>
+            Country: India]</p>
+        <p>Call us at: [8789256440]</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Quantum Creations. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function validateForm() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var message = document.getElementById("message").value;
+
+            if (name === "" || email === "" || message === "") {
+                alert("Please fill out all fields");
+            } else {
+                alert("Form submitted successfully!");
+            }
+        }
+    </script>
+</body>
+
+</html>
